@@ -1,4 +1,4 @@
-# Coo template
+# Live demo of Coo template
 
 This is a template for using the Jekyll theme [Coo][coo] to create online
 documentation.  Coo is a fork of the Jekyll theme [Chirpy][chirpy] with some
