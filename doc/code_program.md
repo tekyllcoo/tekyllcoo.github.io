@@ -2,7 +2,7 @@
 title: Programming language
 ---
 
-The triple back tricks can be used to insert programming code. The default is
+The triple backticks can be used to insert programming code. The default is
 plaintext without line numbering.
 
 ```
@@ -24,8 +24,8 @@ if __name__ == "__main__":
    count(10)
 ```
 
-You must specify a target language for syntax highlighting. Line numbering is
-on by default.
+You must specify a target language for syntax highlighting. Line numbering is on
+by default.
 
 ```python
 def count(n):
@@ -48,6 +48,7 @@ if __name__ == "__main__":
 
 Use the attribute `{: .nolineno }` to turn off line numbering.
 
+<!-- prettier-ignore-start -->
 ```python
 def count(n):
     """
@@ -66,8 +67,8 @@ if __name__ == "__main__":
    greet()
    count(10)
 ```
-
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 JavaScript wants to join in the fun.
 
@@ -76,16 +77,16 @@ JavaScript wants to join in the fun.
  * Count to n.
  */
 function count(n) {
-  for (let i = 1; i <= 10; i++) {
-    console.log(i);
-  }
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
 }
 
 /**
  * Say hello.
  */
 function greet() {
-  console.log("Hello, world!");
+    console.log("Hello, world!");
 }
 
 greet();
@@ -106,6 +107,7 @@ maxInt (x:xs) = myMax x (maxInt xs)
 
 Use the attribute `{: file="path/to/file" }` to specify the file path.
 
+<!-- prettier-ignore-start -->
 ```haskell
 myMax :: Integer -> Integer -> Integer
 myMax x y = maximum [x, y]
@@ -115,5 +117,5 @@ maxInt [] = error "Cannot be empty list"
 maxInt [x] = x
 maxInt (x:xs) = myMax x (maxInt xs)
 ```
-
 {: file="/path/to/max.hs" }
+<!-- prettier-ignore-end -->
